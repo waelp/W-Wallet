@@ -138,7 +138,12 @@ const Store = {
 
     // Calculations
     getCalculations(period = 'thisMonth') {
-        const { income, expenses, debts, debtPayments, savings } = this.data;
+        const data = this.data || this.getEmptyData();
+        const income = data.income || [];
+        const expenses = data.expenses || [];
+        const debts = data.debts || [];
+        const debtPayments = data.debtPayments || [];
+        const savings = data.savings || [];
 
         // Helper to sum
         const sum = (arr, field = 'amount') => arr.reduce((acc, item) => acc + parseFloat(item[field] || 0), 0);

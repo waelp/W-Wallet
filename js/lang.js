@@ -81,6 +81,7 @@ const Lang = {
             listening: 'جاري الاستماع...',
             due_day: 'يوم الاستحقاق',
             debt_warning: 'تنبيه: قسط مستحق غداً!',
+            debt_warning_desc: 'لديك قسط دين يستحق الدفع غداً. يرجى مراجعة قائمة الديون.',
             categories: {
                 personal: 'شخصية',
                 groceries: 'مقاضي البيت',
@@ -140,6 +141,7 @@ const Lang = {
             listening: 'Listening...',
             due_day: 'Due Day',
             debt_warning: 'Warning: Installment due tomorrow!',
+            debt_warning_desc: 'You have a debt installment due tomorrow. Please check your debts.',
             categories: {
                 personal: 'Personal',
                 groceries: 'Groceries',
